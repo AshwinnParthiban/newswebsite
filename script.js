@@ -6,7 +6,7 @@ const searchButton = document.getElementById('btn-search')
 
 async function fetchRandomNews(){
     try{
-        const apiUrl = `https://newsapi.org/v2/top-headlines?sources=techcrunch&pageSize=10&apikey=${apikey}`;
+        const apiUrl =`https://newsapi.org/v2/top-headlines?sources=techcrunch&pageSize=10&apiKey=${apikey}`;
         const response = await fetch(apiUrl);
         const data = await response.json();
         return data.articles
